@@ -1,0 +1,8 @@
+services:
+  - type: web
+    name: alfa-strategy-backend
+    runtime: node
+    plan: free
+    buildCommand: npm install
+    startCommand: npm start
+    healthCheckPath: /health
